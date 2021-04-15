@@ -388,6 +388,56 @@ fn t() {
             ]
         "#]],
     );
+
+    assert_eq!(lexicon.synsets.len(), 120053);
+
+    check(
+        &lexicon.synsets[..10],
+        expect![[r#"
+        [
+            Synset {
+                id: "ewn-05619057-n",
+                part_of_speech: "n",
+            },
+            Synset {
+                id: "ewn-05619467-n",
+                part_of_speech: "n",
+            },
+            Synset {
+                id: "ewn-05619605-n",
+                part_of_speech: "n",
+            },
+            Synset {
+                id: "ewn-05619850-n",
+                part_of_speech: "n",
+            },
+            Synset {
+                id: "ewn-05620024-n",
+                part_of_speech: "n",
+            },
+            Synset {
+                id: "ewn-05620141-n",
+                part_of_speech: "n",
+            },
+            Synset {
+                id: "ewn-05620314-n",
+                part_of_speech: "n",
+            },
+            Synset {
+                id: "ewn-05620489-n",
+                part_of_speech: "n",
+            },
+            Synset {
+                id: "ewn-05620592-n",
+                part_of_speech: "n",
+            },
+            Synset {
+                id: "ewn-05620826-n",
+                part_of_speech: "n",
+            },
+        ]
+    "#]],
+    );
 }
 
 fn check<T: std::fmt::Debug>(t: T, expect: Expect) {

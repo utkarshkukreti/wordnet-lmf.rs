@@ -16,6 +16,9 @@ pub struct Lexicon {
 
     #[serde(rename = "LexicalEntry")]
     pub lexical_entries: Vec<LexicalEntry>,
+
+    #[serde(rename = "Synset")]
+    pub synsets: Vec<Synset>,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
@@ -56,6 +59,13 @@ pub struct SenseRelation {
     #[serde(rename = "relType")]
     pub rel_type: String,
     pub target: String,
+}
+
+#[derive(Clone, Debug, PartialEq, serde::Deserialize)]
+pub struct Synset {
+    pub id: String,
+    #[serde(rename = "partOfSpeech")]
+    pub part_of_speech: String,
 }
 
 impl File {
