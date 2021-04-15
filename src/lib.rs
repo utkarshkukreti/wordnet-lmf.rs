@@ -21,6 +21,16 @@ pub struct Lexicon {
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct LexicalEntry {
     pub id: String,
+    #[serde(rename = "Lemma")]
+    pub lemma: Lemma,
+}
+
+#[derive(Clone, Debug, PartialEq, serde::Deserialize)]
+pub struct Lemma {
+    #[serde(rename = "writtenForm")]
+    pub written_form: String,
+    #[serde(rename = "partOfSpeech")]
+    pub part_of_speech: String,
 }
 
 impl File {
