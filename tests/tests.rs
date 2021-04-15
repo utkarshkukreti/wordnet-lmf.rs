@@ -405,6 +405,32 @@ fn t() {
                     "\"his mind wandered\"",
                     "\"I couldn\'t get his words out of my head\"",
                 ],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-00023451-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-05619467-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-05620826-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-05620953-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-05621057-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-05621261-n",
+                    },
+                ],
             },
             Synset {
                 id: "ewn-05619467-n",
@@ -414,6 +440,16 @@ fn t() {
                 ],
                 examples: [
                     "\"use your noddle\"",
+                ],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-05619057-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "domain_region",
+                        target: "ewn-08879115-n",
+                    },
                 ],
             },
             Synset {
@@ -427,6 +463,16 @@ fn t() {
                     "\"a place in my heart\"",
                     "\"a political system with no place for the less prominent groups\"",
                 ],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-00023451-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-06257026-n",
+                    },
+                ],
             },
             Synset {
                 id: "ewn-05619850-n",
@@ -435,6 +481,24 @@ fn t() {
                     "knowledge that is available to anyone",
                 ],
                 examples: [],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-00023451-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-05620024-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-05620489-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-05620592-n",
+                    },
+                ],
             },
             Synset {
                 id: "ewn-05620024-n",
@@ -443,6 +507,16 @@ fn t() {
                     "anything generally known to everyone",
                 ],
                 examples: [],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-05619850-n",
+                    },
+                    SynsetRelation {
+                        rel_type: "hyponym",
+                        target: "ewn-05620314-n",
+                    },
+                ],
             },
             Synset {
                 id: "ewn-05620141-n",
@@ -451,6 +525,12 @@ fn t() {
                     "the body of ideas that determine the knowledge that is intellectually certain at any particular time",
                 ],
                 examples: [],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-00023451-n",
+                    },
+                ],
             },
             Synset {
                 id: "ewn-05620314-n",
@@ -459,6 +539,12 @@ fn t() {
                     "knowledge of some recent fact or event that has become so commonly known that it has lost its original pertinence",
                 ],
                 examples: [],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-05620024-n",
+                    },
+                ],
             },
             Synset {
                 id: "ewn-05620489-n",
@@ -468,6 +554,12 @@ fn t() {
                 ],
                 examples: [
                     "\"it brought the scandal to light\"",
+                ],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-05619850-n",
+                    },
                 ],
             },
             Synset {
@@ -480,6 +572,12 @@ fn t() {
                     "\"all the reports were out in the open\"",
                     "\"the facts had been brought to the surface\"",
                 ],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-05619850-n",
+                    },
+                ],
             },
             Synset {
                 id: "ewn-05620826-n",
@@ -488,6 +586,12 @@ fn t() {
                     "a young mind not yet affected by experience (according to John Locke)",
                 ],
                 examples: [],
+                relations: [
+                    SynsetRelation {
+                        rel_type: "hypernym",
+                        target: "ewn-05619057-n",
+                    },
+                ],
             },
         ]
         "#]],

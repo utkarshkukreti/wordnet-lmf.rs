@@ -70,6 +70,15 @@ pub struct Synset {
     pub definitions: Vec<String>,
     #[serde(rename = "Example", default)]
     pub examples: Vec<String>,
+    #[serde(rename = "SynsetRelation", default)]
+    pub relations: Vec<SynsetRelation>,
+}
+
+#[derive(Clone, Debug, PartialEq, serde::Deserialize)]
+pub struct SynsetRelation {
+    #[serde(rename = "relType")]
+    pub rel_type: String,
+    pub target: String,
 }
 
 impl File {
