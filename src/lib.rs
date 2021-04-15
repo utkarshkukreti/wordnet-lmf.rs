@@ -66,6 +66,10 @@ pub struct Synset {
     pub id: String,
     #[serde(rename = "partOfSpeech")]
     pub part_of_speech: String,
+    #[serde(rename = "Definition")]
+    pub definitions: Vec<String>,
+    #[serde(rename = "Example", default)]
+    pub examples: Vec<String>,
 }
 
 impl File {

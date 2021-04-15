@@ -398,45 +398,99 @@ fn t() {
             Synset {
                 id: "ewn-05619057-n",
                 part_of_speech: "n",
+                definitions: [
+                    "that which is responsible for one\'s thoughts, feelings, and conscious brain functions; the seat of the faculty of reason",
+                ],
+                examples: [
+                    "\"his mind wandered\"",
+                    "\"I couldn\'t get his words out of my head\"",
+                ],
             },
             Synset {
                 id: "ewn-05619467-n",
                 part_of_speech: "n",
+                definitions: [
+                    "an informal British expression for head or mind",
+                ],
+                examples: [
+                    "\"use your noddle\"",
+                ],
             },
             Synset {
                 id: "ewn-05619605-n",
                 part_of_speech: "n",
+                definitions: [
+                    "an abstract mental location",
+                ],
+                examples: [
+                    "\"he has a special place in my thoughts\"",
+                    "\"a place in my heart\"",
+                    "\"a political system with no place for the less prominent groups\"",
+                ],
             },
             Synset {
                 id: "ewn-05619850-n",
                 part_of_speech: "n",
+                definitions: [
+                    "knowledge that is available to anyone",
+                ],
+                examples: [],
             },
             Synset {
                 id: "ewn-05620024-n",
                 part_of_speech: "n",
+                definitions: [
+                    "anything generally known to everyone",
+                ],
+                examples: [],
             },
             Synset {
                 id: "ewn-05620141-n",
                 part_of_speech: "n",
+                definitions: [
+                    "the body of ideas that determine the knowledge that is intellectually certain at any particular time",
+                ],
+                examples: [],
             },
             Synset {
                 id: "ewn-05620314-n",
                 part_of_speech: "n",
+                definitions: [
+                    "knowledge of some recent fact or event that has become so commonly known that it has lost its original pertinence",
+                ],
+                examples: [],
             },
             Synset {
                 id: "ewn-05620489-n",
                 part_of_speech: "n",
+                definitions: [
+                    "public awareness",
+                ],
+                examples: [
+                    "\"it brought the scandal to light\"",
+                ],
             },
             Synset {
                 id: "ewn-05620592-n",
                 part_of_speech: "n",
+                definitions: [
+                    "information that has become public",
+                ],
+                examples: [
+                    "\"all the reports were out in the open\"",
+                    "\"the facts had been brought to the surface\"",
+                ],
             },
             Synset {
                 id: "ewn-05620826-n",
                 part_of_speech: "n",
+                definitions: [
+                    "a young mind not yet affected by experience (according to John Locke)",
+                ],
+                examples: [],
             },
         ]
-    "#]],
+        "#]],
     );
 }
 
