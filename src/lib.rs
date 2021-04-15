@@ -39,6 +39,15 @@ pub struct Lemma {
 pub struct Sense {
     pub id: String,
     pub synset: String,
+    #[serde(rename = "SenseRelation", default)]
+    pub relations: Vec<SenseRelation>,
+}
+
+#[derive(Clone, Debug, PartialEq, serde::Deserialize)]
+pub struct SenseRelation {
+    #[serde(rename = "relType")]
+    pub rel_type: String,
+    pub target: String,
 }
 
 impl File {
