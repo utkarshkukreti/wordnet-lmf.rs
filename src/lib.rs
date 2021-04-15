@@ -41,7 +41,7 @@ pub struct Lemma {
     #[serde(rename = "writtenForm")]
     pub written_form: S,
     #[serde(rename = "partOfSpeech")]
-    pub part_of_speech: S,
+    pub part_of_speech: PartOfSpeech,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
@@ -69,7 +69,7 @@ pub struct SenseRelation {
 pub struct Synset {
     pub id: S,
     #[serde(rename = "partOfSpeech")]
-    pub part_of_speech: S,
+    pub part_of_speech: PartOfSpeech,
     #[serde(rename = "Definition")]
     pub definitions: V<S>,
     #[serde(rename = "Example", default)]
@@ -83,6 +83,20 @@ pub struct SynsetRelation {
     #[serde(rename = "relType")]
     pub rel_type: S,
     pub target: S,
+}
+
+#[derive(Clone, Debug, PartialEq, serde::Deserialize)]
+pub enum PartOfSpeech {
+    #[serde(rename = "a")]
+    Adjective,
+    #[serde(rename = "s")]
+    AdjectiveSatellite,
+    #[serde(rename = "r")]
+    Adverb,
+    #[serde(rename = "n")]
+    Noun,
+    #[serde(rename = "v")]
+    Verb,
 }
 
 impl File {

@@ -32,7 +32,7 @@ fn t() {
                 id: "ewn-occultism-n",
                 lemma: Lemma {
                     written_form: "occultism",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -62,7 +62,7 @@ fn t() {
                 id: "ewn-probability_theory-n",
                 lemma: Lemma {
                     written_form: "probability theory",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -77,7 +77,7 @@ fn t() {
                 id: "ewn-dermatology-n",
                 lemma: Lemma {
                     written_form: "dermatology",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -105,7 +105,7 @@ fn t() {
                 id: "ewn-omphaloskepsis-n",
                 lemma: Lemma {
                     written_form: "omphaloskepsis",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -120,7 +120,7 @@ fn t() {
                 id: "ewn-rote-n",
                 lemma: Lemma {
                     written_form: "rote",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -135,7 +135,7 @@ fn t() {
                 id: "ewn-pilot-n",
                 lemma: Lemma {
                     written_form: "pilot",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -185,7 +185,7 @@ fn t() {
                 id: "ewn-symbolization-n",
                 lemma: Lemma {
                     written_form: "symbolization",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -220,7 +220,7 @@ fn t() {
                 id: "ewn-orthodontics-n",
                 lemma: Lemma {
                     written_form: "orthodontics",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -244,7 +244,7 @@ fn t() {
                 id: "ewn-peace_advocacy-n",
                 lemma: Lemma {
                     written_form: "peace advocacy",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -259,7 +259,7 @@ fn t() {
                 id: "ewn-culture-n",
                 lemma: Lemma {
                     written_form: "culture",
-                    part_of_speech: "n",
+                    part_of_speech: Noun,
                 },
                 forms: [],
                 senses: [
@@ -352,7 +352,7 @@ fn t() {
                     id: "ewn-genus-n",
                     lemma: Lemma {
                         written_form: "genus",
-                        part_of_speech: "n",
+                        part_of_speech: Noun,
                     },
                     forms: [
                         Form {
@@ -397,7 +397,7 @@ fn t() {
         [
             Synset {
                 id: "ewn-05619057-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "that which is responsible for one\'s thoughts, feelings, and conscious brain functions; the seat of the faculty of reason",
                 ],
@@ -434,7 +434,7 @@ fn t() {
             },
             Synset {
                 id: "ewn-05619467-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "an informal British expression for head or mind",
                 ],
@@ -454,7 +454,7 @@ fn t() {
             },
             Synset {
                 id: "ewn-05619605-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "an abstract mental location",
                 ],
@@ -476,7 +476,7 @@ fn t() {
             },
             Synset {
                 id: "ewn-05619850-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "knowledge that is available to anyone",
                 ],
@@ -502,7 +502,7 @@ fn t() {
             },
             Synset {
                 id: "ewn-05620024-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "anything generally known to everyone",
                 ],
@@ -520,7 +520,7 @@ fn t() {
             },
             Synset {
                 id: "ewn-05620141-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "the body of ideas that determine the knowledge that is intellectually certain at any particular time",
                 ],
@@ -534,7 +534,7 @@ fn t() {
             },
             Synset {
                 id: "ewn-05620314-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "knowledge of some recent fact or event that has become so commonly known that it has lost its original pertinence",
                 ],
@@ -548,7 +548,7 @@ fn t() {
             },
             Synset {
                 id: "ewn-05620489-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "public awareness",
                 ],
@@ -564,7 +564,7 @@ fn t() {
             },
             Synset {
                 id: "ewn-05620592-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "information that has become public",
                 ],
@@ -581,7 +581,7 @@ fn t() {
             },
             Synset {
                 id: "ewn-05620826-n",
-                part_of_speech: "n",
+                part_of_speech: Noun,
                 definitions: [
                     "a young mind not yet affected by experience (according to John Locke)",
                 ],
