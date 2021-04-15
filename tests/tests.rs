@@ -34,6 +34,7 @@ fn t() {
                     written_form: "occultism",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-occultism-n-05977317-01",
@@ -63,6 +64,7 @@ fn t() {
                     written_form: "probability theory",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-probability_theory-n-06046620-01",
@@ -77,6 +79,7 @@ fn t() {
                     written_form: "dermatology",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-dermatology-n-06059031-01",
@@ -104,6 +107,7 @@ fn t() {
                     written_form: "omphaloskepsis",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-omphaloskepsis-n-05795853-01",
@@ -118,6 +122,7 @@ fn t() {
                     written_form: "rote",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-rote-n-05763390-01",
@@ -132,6 +137,7 @@ fn t() {
                     written_form: "pilot",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-pilot-n-10452928-01",
@@ -181,6 +187,7 @@ fn t() {
                     written_form: "symbolization",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-symbolization-n-06614677-01",
@@ -215,6 +222,7 @@ fn t() {
                     written_form: "orthodontics",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-orthodontics-n-06058083-01",
@@ -238,6 +246,7 @@ fn t() {
                     written_form: "peace advocacy",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-peace_advocacy-n-06231604-01",
@@ -252,6 +261,7 @@ fn t() {
                     written_form: "culture",
                     part_of_speech: "n",
                 },
+                forms: [],
                 senses: [
                     Sense {
                         id: "ewn-culture-n-08304765-01",
@@ -327,7 +337,56 @@ fn t() {
                 ],
             },
         ]
-    "#]],
+        "#]],
+    );
+
+    check(
+        &lexicon
+            .lexical_entries
+            .iter()
+            .filter(|lexical_entry| ["genus"].contains(&&*lexical_entry.lemma.written_form))
+            .collect::<Vec<_>>(),
+        expect![[r#"
+            [
+                LexicalEntry {
+                    id: "ewn-genus-n",
+                    lemma: Lemma {
+                        written_form: "genus",
+                        part_of_speech: "n",
+                    },
+                    forms: [
+                        Form {
+                            written_form: "genera",
+                        },
+                        Form {
+                            written_form: "genus",
+                        },
+                    ],
+                    senses: [
+                        Sense {
+                            id: "ewn-genus-n-05853540-01",
+                            synset: "ewn-05853540-n",
+                            relations: [
+                                SenseRelation {
+                                    rel_type: "derivation",
+                                    target: "ewn-generic-s-01105857-01",
+                                },
+                            ],
+                        },
+                        Sense {
+                            id: "ewn-genus-n-08125938-01",
+                            synset: "ewn-08125938-n",
+                            relations: [
+                                SenseRelation {
+                                    rel_type: "derivation",
+                                    target: "ewn-generic-a-02744752-01",
+                                },
+                            ],
+                        },
+                    ],
+                },
+            ]
+        "#]],
     );
 }
 

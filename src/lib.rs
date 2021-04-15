@@ -23,6 +23,8 @@ pub struct LexicalEntry {
     pub id: String,
     #[serde(rename = "Lemma")]
     pub lemma: Lemma,
+    #[serde(rename = "Form", default)]
+    pub forms: Vec<Form>,
     #[serde(rename = "Sense")]
     pub senses: Vec<Sense>,
 }
@@ -33,6 +35,12 @@ pub struct Lemma {
     pub written_form: String,
     #[serde(rename = "partOfSpeech")]
     pub part_of_speech: String,
+}
+
+#[derive(Clone, Debug, PartialEq, serde::Deserialize)]
+pub struct Form {
+    #[serde(rename = "writtenForm")]
+    pub written_form: String,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
