@@ -7,6 +7,12 @@ pub struct File {
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct Lexicon {
     pub id: String,
+    pub label: String,
+    pub language: String,
+    pub email: String,
+    pub license: String,
+    pub version: String,
+    pub url: String,
 }
 
 impl File {
