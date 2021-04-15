@@ -4,3 +4,5 @@ version = "0.1.0"
 edition = "2018"
 
 [dependencies]
+quick-xml = { version = "0.22", features = ["serialize"] }
+serde = { version = "1", features = ["derive"] }
