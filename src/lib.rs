@@ -13,6 +13,14 @@ pub struct Lexicon {
     pub license: String,
     pub version: String,
     pub url: String,
+
+    #[serde(rename = "LexicalEntry")]
+    pub lexical_entries: Vec<LexicalEntry>,
+}
+
+#[derive(Clone, Debug, PartialEq, serde::Deserialize)]
+pub struct LexicalEntry {
+    pub id: String,
 }
 
 impl File {

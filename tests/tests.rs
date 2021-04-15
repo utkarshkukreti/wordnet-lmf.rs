@@ -1,3 +1,5 @@
+use expect_test::{expect, Expect};
+
 #[test]
 fn t() {
     let file = wordnet_lmf::File::open("tests/fixtures/english-wordnet-2020.xml").unwrap();
@@ -19,4 +21,48 @@ fn t() {
         lexicon.url,
         "https://github.com/globalwordnet/english-wordnet"
     );
+
+    assert_eq!(lexicon.lexical_entries.len(), 163079);
+
+    check(
+        &lexicon.lexical_entries[..10],
+        expect![[r#"
+        [
+            LexicalEntry {
+                id: "ewn-occultism-n",
+            },
+            LexicalEntry {
+                id: "ewn-probability_theory-n",
+            },
+            LexicalEntry {
+                id: "ewn-dermatology-n",
+            },
+            LexicalEntry {
+                id: "ewn-omphaloskepsis-n",
+            },
+            LexicalEntry {
+                id: "ewn-rote-n",
+            },
+            LexicalEntry {
+                id: "ewn-pilot-n",
+            },
+            LexicalEntry {
+                id: "ewn-symbolization-n",
+            },
+            LexicalEntry {
+                id: "ewn-orthodontics-n",
+            },
+            LexicalEntry {
+                id: "ewn-peace_advocacy-n",
+            },
+            LexicalEntry {
+                id: "ewn-culture-n",
+            },
+        ]
+    "#]],
+    );
+}
+
+fn check<T: std::fmt::Debug>(t: T, expect: Expect) {
+    expect.assert_debug_eq(&t)
 }
