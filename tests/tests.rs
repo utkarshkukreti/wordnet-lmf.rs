@@ -41,7 +41,7 @@ fn t() {
                             synset: "ewn-05977317-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-occultist-n-10390080-01",
                                 },
                             ],
@@ -51,7 +51,7 @@ fn t() {
                             synset: "ewn-05977155-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-occultist-n-10390080-01",
                                 },
                             ],
@@ -86,15 +86,15 @@ fn t() {
                             synset: "ewn-06059031-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-dermatologic-a-02927543-01",
                                 },
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-dermatological-a-02927543-02",
                                 },
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-dermatologist-n-10025839-01",
                                 },
                             ],
@@ -144,7 +144,7 @@ fn t() {
                             synset: "ewn-10452928-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-pilot-v-01944952-03",
                                 },
                             ],
@@ -154,7 +154,7 @@ fn t() {
                             synset: "ewn-10453216-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-pilot-v-01937276-02",
                                 },
                             ],
@@ -194,7 +194,7 @@ fn t() {
                             synset: "ewn-06614677-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-symbolize-v-00989629-01",
                                 },
                             ],
@@ -204,7 +204,7 @@ fn t() {
                             synset: "ewn-05773412-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-symbolize-v-00837915-02",
                                 },
                             ],
@@ -229,11 +229,11 @@ fn t() {
                             synset: "ewn-06058083-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-orthodontic-a-02927128-01",
                                 },
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-orthodontist-n-10404309-01",
                                 },
                             ],
@@ -268,7 +268,7 @@ fn t() {
                             synset: "ewn-08304765-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-acculturate-v-00159688-01",
                                 },
                             ],
@@ -278,15 +278,15 @@ fn t() {
                             synset: "ewn-05759791-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-cultural-s-02256437-01",
                                 },
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-cultural-a-02910174-01",
                                 },
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-acculturate-v-00159688-01",
                                 },
                             ],
@@ -296,15 +296,15 @@ fn t() {
                             synset: "ewn-05993821-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-cultural-s-02256437-01",
                                 },
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-cultural-a-02883805-01",
                                 },
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-acculturate-v-00159688-01",
                                 },
                             ],
@@ -329,7 +329,7 @@ fn t() {
                             synset: "ewn-00919573-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-cultural-a-02883666-01",
                                 },
                             ],
@@ -368,7 +368,7 @@ fn t() {
                             synset: "ewn-05853540-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-generic-s-01105857-01",
                                 },
                             ],
@@ -378,7 +378,7 @@ fn t() {
                             synset: "ewn-08125938-n",
                             relations: [
                                 SenseRelation {
-                                    rel_type: "derivation",
+                                    rel_type: Derivation,
                                     target: "ewn-generic-a-02744752-01",
                                 },
                             ],
@@ -407,27 +407,27 @@ fn t() {
                     ],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-00023451-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-05619467-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-05620826-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-05620953-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-05621057-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-05621261-n",
                         },
                     ],
@@ -443,11 +443,11 @@ fn t() {
                     ],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-05619057-n",
                         },
                         SynsetRelation {
-                            rel_type: "domain_region",
+                            rel_type: DomainRegion,
                             target: "ewn-08879115-n",
                         },
                     ],
@@ -465,11 +465,11 @@ fn t() {
                     ],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-00023451-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-06257026-n",
                         },
                     ],
@@ -483,19 +483,19 @@ fn t() {
                     examples: [],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-00023451-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-05620024-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-05620489-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-05620592-n",
                         },
                     ],
@@ -509,11 +509,11 @@ fn t() {
                     examples: [],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-05619850-n",
                         },
                         SynsetRelation {
-                            rel_type: "hyponym",
+                            rel_type: Hyponym,
                             target: "ewn-05620314-n",
                         },
                     ],
@@ -527,7 +527,7 @@ fn t() {
                     examples: [],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-00023451-n",
                         },
                     ],
@@ -541,7 +541,7 @@ fn t() {
                     examples: [],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-05620024-n",
                         },
                     ],
@@ -557,7 +557,7 @@ fn t() {
                     ],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-05619850-n",
                         },
                     ],
@@ -574,7 +574,7 @@ fn t() {
                     ],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-05619850-n",
                         },
                     ],
@@ -588,7 +588,7 @@ fn t() {
                     examples: [],
                     relations: [
                         SynsetRelation {
-                            rel_type: "hypernym",
+                            rel_type: Hypernym,
                             target: "ewn-05619057-n",
                         },
                     ],

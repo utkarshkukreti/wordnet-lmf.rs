@@ -61,7 +61,7 @@ pub struct Sense {
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct SenseRelation {
     #[serde(rename = "relType")]
-    pub rel_type: S,
+    pub rel_type: RelationType,
     pub target: S,
 }
 
@@ -81,7 +81,7 @@ pub struct Synset {
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct SynsetRelation {
     #[serde(rename = "relType")]
-    pub rel_type: S,
+    pub rel_type: RelationType,
     pub target: S,
 }
 
@@ -97,6 +97,38 @@ pub enum PartOfSpeech {
     Noun,
     #[serde(rename = "v")]
     Verb,
+}
+
+#[derive(Clone, Debug, PartialEq, serde::Deserialize)]
+#[serde(rename_all = "snake_case")]
+pub enum RelationType {
+    Also,
+    Antonym,
+    Attribute,
+    Causes,
+    Derivation,
+    DomainRegion,
+    DomainTopic,
+    Entails,
+    Exemplifies,
+    HasDomainRegion,
+    HasDomainTopic,
+    HoloMember,
+    HoloPart,
+    HoloSubstance,
+    Hypernym,
+    Hyponym,
+    InstanceHypernym,
+    InstanceHyponym,
+    IsCausedBy,
+    IsEntailedBy,
+    IsExemplifiedBy,
+    MeroMember,
+    MeroPart,
+    MeroSubstance,
+    Participle,
+    Pertainym,
+    Similar,
 }
 
 impl File {
