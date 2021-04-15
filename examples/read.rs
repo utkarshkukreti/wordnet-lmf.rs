@@ -6,11 +6,11 @@ fn main() {
     let file = wordnet_lmf::File::open(path).unwrap();
     dbg!(timer.elapsed());
     dbg!(file.lexicons.len());
-    for lexicon in file.lexicons {
+    for lexicon in &*file.lexicons {
         dbg!(
-            lexicon.id,
-            lexicon.label,
-            lexicon.language,
+            &lexicon.id,
+            &lexicon.label,
+            &lexicon.language,
             lexicon.lexical_entries.len(),
             lexicon.synsets.len()
         );

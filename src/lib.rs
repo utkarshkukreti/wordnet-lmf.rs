@@ -1,84 +1,88 @@
+pub type S = Box<str>;
+
+pub type V<T> = Box<[T]>;
+
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct File {
     #[serde(rename = "Lexicon")]
-    pub lexicons: Vec<Lexicon>,
+    pub lexicons: V<Lexicon>,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct Lexicon {
-    pub id: String,
-    pub label: String,
-    pub language: String,
-    pub email: String,
-    pub license: String,
-    pub version: String,
-    pub url: String,
+    pub id: S,
+    pub label: S,
+    pub language: S,
+    pub email: S,
+    pub license: S,
+    pub version: S,
+    pub url: S,
 
     #[serde(rename = "LexicalEntry")]
-    pub lexical_entries: Vec<LexicalEntry>,
+    pub lexical_entries: V<LexicalEntry>,
 
     #[serde(rename = "Synset")]
-    pub synsets: Vec<Synset>,
+    pub synsets: V<Synset>,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct LexicalEntry {
-    pub id: String,
+    pub id: S,
     #[serde(rename = "Lemma")]
     pub lemma: Lemma,
     #[serde(rename = "Form", default)]
-    pub forms: Vec<Form>,
+    pub forms: V<Form>,
     #[serde(rename = "Sense")]
-    pub senses: Vec<Sense>,
+    pub senses: V<Sense>,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct Lemma {
     #[serde(rename = "writtenForm")]
-    pub written_form: String,
+    pub written_form: S,
     #[serde(rename = "partOfSpeech")]
-    pub part_of_speech: String,
+    pub part_of_speech: S,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct Form {
     #[serde(rename = "writtenForm")]
-    pub written_form: String,
+    pub written_form: S,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct Sense {
-    pub id: String,
-    pub synset: String,
+    pub id: S,
+    pub synset: S,
     #[serde(rename = "SenseRelation", default)]
-    pub relations: Vec<SenseRelation>,
+    pub relations: V<SenseRelation>,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct SenseRelation {
     #[serde(rename = "relType")]
-    pub rel_type: String,
-    pub target: String,
+    pub rel_type: S,
+    pub target: S,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct Synset {
-    pub id: String,
+    pub id: S,
     #[serde(rename = "partOfSpeech")]
-    pub part_of_speech: String,
+    pub part_of_speech: S,
     #[serde(rename = "Definition")]
-    pub definitions: Vec<String>,
+    pub definitions: V<S>,
     #[serde(rename = "Example", default)]
-    pub examples: Vec<String>,
+    pub examples: V<S>,
     #[serde(rename = "SynsetRelation", default)]
-    pub relations: Vec<SynsetRelation>,
+    pub relations: V<SynsetRelation>,
 }
 
 #[derive(Clone, Debug, PartialEq, serde::Deserialize)]
 pub struct SynsetRelation {
     #[serde(rename = "relType")]
-    pub rel_type: String,
-    pub target: String,
+    pub rel_type: S,
+    pub target: S,
 }
 
 impl File {
